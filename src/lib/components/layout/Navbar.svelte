@@ -52,12 +52,12 @@
     <div class="flex justify-between items-center h-20">
       <!-- Logo -->
       <button
-        class="flex-shrink-0 flex items-center gap-2 cursor-pointer bg-transparent border-0 p-0 hover:scale-105 transition-transform duration-200"
+        class="flex-shrink-0 flex items-center gap-2 cursor-pointer bg-transparent border-0 p-0 transition-transform duration-200"
         onclick={scrollToTop}
         onkeydown={handleLogoKeydown}
         aria-label="Go to top"
       >
-        <div class="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center text-white font-bold text-xl transition-transform duration-200">
+        <div class="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center text-white font-bold text-xl">
           M
         </div>
         <span class="font-bold text-2xl tracking-tight text-slate-900">mimar<span class="text-primary-600">.id</span></span>
@@ -88,7 +88,6 @@
         <Button
           href="#demo"
           size="md"
-          class="hover:scale-105 hover:shadow-lg transition-all duration-300"
         >
           Jadwalkan Demo
         </Button>
@@ -129,7 +128,7 @@
         {/each}
         <Button
           href="#demo"
-          class="w-full mt-4 hover:scale-105 hover:shadow-lg transition-all duration-300"
+          class="w-full mt-4"
           onclick={() => isMobileMenuOpen = false}
         >
           Jadwalkan Demo

@@ -41,12 +41,12 @@
           in:fade={{ duration: 600, delay: 300 }}
           class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
         >
-          <Button href="#demo" size="lg" class="group hover:scale-105 hover:shadow-lg transition-all duration-300">
+          <Button href="#demo" size="lg" class="group hover:shadow-lg transition-all duration-300">
             Coba Gratis Sekarang
             <Icon name="arrow-right" size={20} class="group-hover:translate-x-1 transition-transform duration-300" />
           </Button>
-          <Button href="/demo-video" variant="secondary" size="lg" class="group hover:scale-105 hover:shadow-lg transition-all duration-300">
-            <Icon name="play-circle" size={20} class="text-primary-600 group-hover:scale-110 transition-transform duration-300" />
+          <Button href="/demo-video" variant="secondary" size="lg" class="group hover:shadow-lg transition-all duration-300">
+            <Icon name="play-circle" size={20} class="text-primary-600 transition-transform duration-300" />
             Lihat Video Demo
           </Button>
         </div>
@@ -56,11 +56,11 @@
           class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-slate-500 text-sm font-medium"
         >
           <div class="flex items-center gap-2 group cursor-default">
-            <Icon name="check-circle-2" size={20} class="text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-all duration-200" />
+            <Icon name="check-circle-2" size={20} class="text-green-500 group-hover:text-green-600 transition-all duration-200" />
             <span class="group-hover:text-slate-700 transition-colors duration-200">Tanpa Biaya Setup</span>
           </div>
           <div class="flex items-center gap-2 group cursor-default">
-            <Icon name="check-circle-2" size={20} class="text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-all duration-200" />
+            <Icon name="check-circle-2" size={20} class="text-green-500 group-hover:text-green-600 transition-all duration-200" />
             <span class="group-hover:text-slate-700 transition-colors duration-200">Support Lokal 24/7</span>
           </div>
         </div>

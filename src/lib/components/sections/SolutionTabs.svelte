@@ -4,6 +4,7 @@
   import GanttChart from './SolutionTabs/GanttChart.svelte';
   import SitePlan from './SolutionTabs/SitePlan.svelte';
   import type { TabType, TabContent as TabContentType } from '../../types';
+  import { fade, slide } from 'svelte/transition';
 
   let activeTab = $state<TabType>('kontraktor');
 
@@ -66,7 +67,7 @@
             {#each tabs as tab}
               <button
                 onclick={() => setTab(tab)}
-                class="pb-3 px-1 text-lg font-bold border-b-2 transition-all duration-300 hover:scale-105 capitalize {activeTab === tab
+                class="pb-3 px-1 text-lg font-bold border-b-2 transition-all duration-300 capitalize {activeTab === tab
                   ? 'border-primary-600 text-primary-700'
                   : 'border-transparent text-slate-400 hover:text-slate-600'}"
               >

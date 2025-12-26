@@ -6,6 +6,7 @@
   --color-primary-100: #dbeafe;
   --color-primary-500: #3b82f6;
   --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
   --color-primary-800: #1e40af;
   --color-primary-900: #1e3a8a;
   
@@ -14,6 +15,125 @@
   
   /* Custom font family */
   --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Explicit hover styles for Tailwind classes */
+.hover\:bg-primary-700:hover {
+  background-color: #1d4ed8 !important;
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+}
+
+.hover\:shadow-primary-600\/50:hover {
+  box-shadow: 0 20px 25px -5px rgb(37 99 235 / 0.5), 0 8px 10px -6px rgb(37 99 235 / 0.5) !important;
+}
+
+.hover\:text-primary-700:hover {
+  color: #1d4ed8 !important;
+}
+
+.hover\:text-primary-900:hover {
+  color: #1e3a8a !important;
+}
+
+.hover\:text-slate-900:hover {
+  color: #0f172a !important;
+}
+
+.group-hover\:w-full:hover > *:hover,
+.group:hover .group-hover\:w-full {
+  width: 100% !important;
+}
+
+.hover\:bg-slate-50:hover {
+  background-color: #f8fafc !important;
+}
+
+/* FeatureCard hover styles */
+.group:hover .group-hover\:bg-white {
+  background-color: #ffffff !important;
+}
+
+.group:hover .group-hover\:text-blue-600 {
+  color: #2563eb !important;
+}
+
+/* FeatureCard card hover styles */
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translateY(-0.25rem) !important;
+}
+
+/* Additional hover styles for various elements */
+.hover\:text-blue-600:hover {
+  color: #2563eb !important;
+}
+
+.hover\:text-primary-700:hover {
+  color: #1d4ed8 !important;
+}
+
+/* SitePlan and GanttChart hover styles */
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+.hover\:bg-green-500:hover {
+  background-color: #22c55e !important;
+}
+
+.hover\:bg-yellow-500:hover {
+  background-color: #eab308 !important;
+}
+
+.hover\:bg-blue-300:hover {
+  background-color: #93c5fd !important;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #2563eb !important;
+}
+
+.hover\:bg-slate-300:hover {
+  background-color: #cbd5e1 !important;
+}
+
+.hover\:bg-orange-500:hover {
+  background-color: #f97316 !important;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #16a34a !important;
+}
+
+/* DashboardMockup hover styles */
+.hover\:bg-blue-100:hover {
+  background-color: #dbeafe !important;
+}
+
+.hover\:bg-green-200:hover {
+  background-color: #bbf7d0 !important;
+}
+
+.hover\:border-primary-200:hover {
+  border-color: #bfdbfe !important;
+}
+
+.hover\:text-red-600:hover {
+  color: #dc2626 !important;
+}
+
+.hover\:text-orange-600:hover {
+  color: #ea580c !important;
+}
+
+.hover\:text-green-700:hover {
+  color: #15803d !important;
 }
 
 :root {

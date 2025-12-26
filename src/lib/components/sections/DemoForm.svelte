@@ -70,12 +70,12 @@
             Jadwalkan demo 30 menit. Kami akan tunjukkan cara mimar.id menghemat budget proyek Anda hingga 15%.
           </p>
           <ul class="space-y-3 text-blue-100 mb-8">
-            <li class="flex items-center gap-2 group hover:scale-105 transition-transform duration-200 cursor-default">
-              <Icon name="check" size={20} class="text-accent group-hover:text-yellow-300 group-hover:scale-110 transition-all duration-200" />
+            <li class="flex items-center gap-2 group transition-transform duration-200 cursor-default">
+              <Icon name="check" size={20} class="text-accent group-hover:text-yellow-300 transition-all duration-200" />
               <span class="group-hover:text-white transition-colors duration-200">Free konsultasi workflow</span>
             </li>
-            <li class="flex items-center gap-2 group hover:scale-105 transition-transform duration-200 cursor-default">
-              <Icon name="check" size={20} class="text-accent group-hover:text-yellow-300 group-hover:scale-110 transition-all duration-200" />
+            <li class="flex items-center gap-2 group transition-transform duration-200 cursor-default">
+              <Icon name="check" size={20} class="text-accent group-hover:text-yellow-300 transition-all duration-200" />
               <span class="group-hover:text-white transition-colors duration-200">Trial akses full fitur</span>
             </li>
           </ul>
@@ -92,7 +92,7 @@
                   bind:value={formData.name}
                   oninput={() => handleInput('name', formData.name)}
                   onblur={() => handleBlur('name')}
-                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 focus:scale-[1.01] {hasError('name') ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : ''} {hasSuccess('name') ? 'border-green-500 focus:ring-green-500 focus:border-green-500' : ''}"
+                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 {hasError('name') ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : ''} {hasSuccess('name') ? 'border-green-500 focus:ring-green-500 focus:border-green-500' : ''}"
                   placeholder="Budi Santoso"
                 />
                 {#if hasError('name')}
@@ -112,7 +112,7 @@
                   bind:value={formData.company}
                   oninput={() => handleInput('company', formData.company)}
                   onblur={() => handleBlur('company')}
-                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 focus:scale-[1.01]"
+                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300"
                   placeholder="PT Konstruksi Jaya"
                 />
               </div>
@@ -124,7 +124,7 @@
                   bind:value={formData.whatsapp}
                   oninput={() => handleInput('whatsapp', formData.whatsapp)}
                   onblur={() => handleBlur('whatsapp')}
-                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 focus:scale-[1.01] {hasError('whatsapp') ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : ''} {hasSuccess('whatsapp') ? 'border-green-500 focus:ring-green-500 focus:border-green-500' : ''}"
+                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 {hasError('whatsapp') ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : ''} {hasSuccess('whatsapp') ? 'border-green-500 focus:ring-green-500 focus:border-green-500' : ''}"
                   placeholder="0812..."
                 />
                 {#if hasError('whatsapp')}
@@ -141,7 +141,7 @@
                 <select
                   id="businessType"
                   bind:value={formData.businessType}
-                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 focus:scale-[1.01] bg-white"
+                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 bg-white"
                 >
                   {#each businessTypes as type}
                     <option value={type}>{type}</option>
@@ -152,7 +152,7 @@
                 <Button
                   variant="accent"
                   type="submit"
-                  class="w-full mt-2 hover:scale-105 hover:shadow-xl transition-all duration-300"
+                  class="w-full mt-2 hover:shadow-xl transition-all duration-300"
                 >
                   Jadwalkan Demo Gratis
                 </Button>

@@ -27,7 +27,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
       <div class="col-span-1 md:col-span-1" in:slide={{ duration: 400, delay: 0 }}>
-        <div class="flex items-center gap-2 mb-4 text-white hover:scale-105 transition-transform duration-200 cursor-pointer">
+        <div class="flex items-center gap-2 mb-4 text-white transition-transform duration-200 cursor-pointer">
           <div class="w-8 h-8 bg-primary-600 rounded flex items-center justify-center font-bold">M</div>
           <span class="font-bold text-xl">mimar.id</span>
         </div>
@@ -36,7 +36,7 @@
         </p>
         <div class="flex gap-4">
           {#each socialLinks as link}
-            <a href={link.href} class="hover:scale-110 hover:text-white hover:drop-shadow-lg transition-all duration-300">
+            <a href={link.href} class="hover:text-white hover:drop-shadow-lg transition-all duration-300">
               <Icon name={link.icon} size={20} />
             </a>
           {/each}

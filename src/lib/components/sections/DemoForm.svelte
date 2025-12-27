@@ -7,8 +7,7 @@
   let formData = $state<FormData>({
     name: '',
     company: '',
-    whatsapp: '',
-    businessType: 'Kontraktor Utama',
+    businessType: 'Kontraktor',
   });
 
   // Validation state
@@ -16,16 +15,20 @@
   let touched = $state<Partial<Record<keyof FormData, boolean>>>({});
 
   const businessTypes = [
-    'Kontraktor Utama',
-    'Sub-Kontraktor',
+    'Kontraktor',
     'Developer Properti',
     'Konsultan Arsitek',
   ];
 
   function handleSubmit(event: Event) {
     event.preventDefault();
-    alert('Terima kasih! Tim kami akan menghubungi Anda segera.');
-    console.log('Form submitted:', formData);
+    
+    // Create WhatsApp message with form data
+    const message = `Halo, saya ingin request demo mimar.id\n\nNama: ${formData.name}\nPerusahaan: ${formData.company}\nTipe Bisnis: ${formData.businessType}`;
+    
+    // Open WhatsApp with pre-filled message
+    const whatsappUrl = `https://wa.me/62816782197?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   }
 
   function handleInput(key: keyof FormData, value: string) {
@@ -37,8 +40,6 @@
     touched[key] = true;
     // Simple validation logic (can be expanded)
     if (key === 'name' && formData.name.length < 2) {
-      errors[key] = true;
-    } else if (key === 'whatsapp' && formData.whatsapp.length < 10) {
       errors[key] = true;
     } else {
       errors[key] = false;
@@ -116,27 +117,7 @@
                   placeholder="PT Konstruksi Jaya"
                 />
               </div>
-              <div class="relative" in:fade={{ duration: 400, delay: 400 }}>
-                <label for="whatsapp" class="block text-sm font-medium text-slate-700 mb-1 peer-focus:text-primary-600 transition-colors duration-200">Nomor WhatsApp</label>
-                <input
-                  id="whatsapp"
-                  type="tel"
-                  bind:value={formData.whatsapp}
-                  oninput={() => handleInput('whatsapp', formData.whatsapp)}
-                  onblur={() => handleBlur('whatsapp')}
-                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-300 {hasError('whatsapp') ? 'border-red-500 focus:ring-red-500 focus:border-red-500' : ''} {hasSuccess('whatsapp') ? 'border-green-500 focus:ring-green-500 focus:border-green-500' : ''}"
-                  placeholder="0812..."
-                />
-                {#if hasError('whatsapp')}
-                  <p class="text-red-500 text-xs mt-1 transition-opacity duration-200">Nomor WhatsApp harus valid</p>
-                {/if}
-                {#if hasSuccess('whatsapp')}
-                  <div class="absolute right-3 top-7 text-green-500 transition-opacity duration-200">
-                    <Icon name="check" size={16} />
-                  </div>
-                {/if}
-              </div>
-              <div class="relative" in:fade={{ duration: 400, delay: 450 }}>
+              <div class="relative" in:fade={{ duration: 400, delay: 425 }}>
                 <label for="businessType" class="block text-sm font-medium text-slate-700 mb-1 peer-focus:text-primary-600 transition-colors duration-200">Tipe Bisnis</label>
                 <select
                   id="businessType"

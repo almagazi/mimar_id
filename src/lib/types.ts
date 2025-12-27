@@ -31,7 +31,6 @@ export interface TabFeature {
 export interface FormData {
   name: string;
   company: string;
-  whatsapp: string;
   businessType: string;
 }
 

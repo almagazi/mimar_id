@@ -4,10 +4,9 @@
   import { fade } from 'svelte/transition';
 
   const logos: CompanyLogo[] = [
-    { icon: 'building-2', name: 'KARYA BETON' },
-    { icon: 'triangle', name: 'ADHI BUILD' },
-    { icon: 'home', name: 'CITRA LAND' },
-    { icon: 'hammer', name: 'TOTAL KONSTRUKSI' },
+    { icon: 'building-2', name: 'PROSPERA INTI CIPTA' },
+    { icon: 'home', name: 'CAKRA ASTANA' },
+    { icon: 'hammer', name: 'KARYA TATA BANGSA' },
   ];
 </script>
 

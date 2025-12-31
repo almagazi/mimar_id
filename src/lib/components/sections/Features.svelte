@@ -56,7 +56,7 @@
         in:fly={{ duration: 600, y: 20, opacity: 0, delay: 100 }}
         class="text-lg text-slate-600"
       >
-        Dari peletakan batu pertama hingga serah terima kunci, mimar.id mengelola setiap aspek bisnis Anda.
+        Dari peletakan batu pertama hingga serah terima kunci, Mimar mengelola setiap aspek bisnis Anda.
       </p>
     </div>
 

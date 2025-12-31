@@ -51,7 +51,7 @@
           </Button>
         </div>
 
-        <div
+        <!-- <div
           in:fade={{ duration: 600, delay: 400 }}
           class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-slate-500 text-sm font-medium"
         >
@@ -63,7 +63,7 @@
             <Icon name="check-circle-2" size={20} class="text-green-500 group-hover:text-green-600 transition-all duration-200" />
             <span class="group-hover:text-slate-700 transition-colors duration-200">Support Lokal 24/7</span>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- Hero Image / Dashboard Mockup -->
